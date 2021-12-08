@@ -30,7 +30,7 @@ and d is the distance computed between two points.
 
 ### API Endpoint
 ```html
-http://127.0.0.1:5000/main/v1/loc?lat=23.7869245&lng=90.3774381
+https://find-nearest-hospital-bd.herokuapp.com/main/v1/loc?lat=23.7869245&lng=90.3774381
 ```
 
 ### API Response

@@ -1,7 +1,7 @@
 import os
 import sys
 import json
-from datetime import datetime
+import time
 from flask import Flask, request, jsonify
 
 sys.path.insert(0, os.getcwd() + '/apis')
@@ -46,7 +46,7 @@ def data_url():
         data = {
             'status': 'success',
             'data': find_closest_lat_lon(city_list, city_to_find),
-            'timestamp': datetime.now()
+            'timestamp': time.time()
         }
     else:
         data = {'status': 'failed', 'reason': 'No URL Provided!'}
